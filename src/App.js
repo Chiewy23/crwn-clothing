@@ -5,23 +5,28 @@ const App = () => {
   const categories = [
     {
       id: UUIDV4(),
-      title: "Hats"
+      title: "Hats",
+      img: ""
     },
     {
       id: UUIDV4(),
-      title: "Jackets"
+      title: "Jackets",
+      img: ""
     },
     {
       id: UUIDV4(),
-      title: "Sneakers"
+      title: "Sneakers",
+      img: ""
     },
     {
       id: UUIDV4(),
-      title: "Womens"
+      title: "Womens",
+      img: ""
     },
     {
       id: UUIDV4(),
-      title: "Mens"
+      title: "Mens",
+      img: ""
     }
   ];
 
