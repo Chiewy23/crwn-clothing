@@ -1,7 +1,5 @@
 import UUIDV4 from "./utilities/UUIDV4";
-import CategoryItem from "./components/categories/category-item.component";
-
-import "./components/categories/categories.styles.scss";
+import Categories from "./components/categories/categories.component";
 
 const App = () => {
 
@@ -34,15 +32,7 @@ const App = () => {
   ];
 
   return (
-    <div className="categories-container">
-      {
-        categories.map(({id, title, imageUrl}) => {
-          return (
-            <CategoryItem key={id} title={title} imageUrl={imageUrl} />
-          )
-        })
-      }
-    </div>
+    <Categories categories={categories} />
   );
 }
 
