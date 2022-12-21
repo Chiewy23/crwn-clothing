@@ -8,36 +8,37 @@ const App = () => {
     {
       id: UUIDV4(),
       title: "Hats",
-      img: ""
+      imageUrl: "https://i.ibb.co/cvpntL1/hats.png"
     },
     {
       id: UUIDV4(),
       title: "Jackets",
-      img: ""
+      imageUrl: "https://i.ibb.co/px2tCc3/jackets.png"
     },
     {
       id: UUIDV4(),
       title: "Sneakers",
-      img: ""
+      imageUrl: "https://i.ibb.co/0jqHpnp/sneakers.png"
     },
     {
       id: UUIDV4(),
       title: "Womens",
-      img: ""
+      imageUrl: "https://i.ibb.co/GCCdy8t/womens.png"
     },
     {
       id: UUIDV4(),
       title: "Mens",
-      img: ""
+      imageUrl: "https://i.ibb.co/R70vBrQ/men.png"
     }
   ];
 
   return (
     <div className="categories-container">
       {
-        categories.map(({id, title}) => {
+        categories.map(({id, title, imageUrl}) => {
           return (
             <div className="category-container" key={id}>
+              <div className="background-image" style={{backgroundImage: `url(${imageUrl})`}}></div>
               <div className="category-body-container">
                 <h2>{title}</h2>
                 <p>Shop Now</p>
