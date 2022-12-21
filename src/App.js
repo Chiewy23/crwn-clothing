@@ -1,5 +1,7 @@
 import UUIDV4 from "./utilities/UUIDV4";
 
+import "./components/categories/categories.styles.scss";
+
 const App = () => {
 
   const categories = [
