@@ -1,4 +1,5 @@
 import UUIDV4 from "./utilities/UUIDV4";
+import CategoryItem from "./components/categories/category-item.component";
 
 import "./components/categories/categories.styles.scss";
 
@@ -37,13 +38,7 @@ const App = () => {
       {
         categories.map(({id, title, imageUrl}) => {
           return (
-            <div className="category-container" key={id}>
-              <div className="background-image" style={{backgroundImage: `url(${imageUrl})`}}></div>
-              <div className="category-body-container">
-                <h2>{title}</h2>
-                <p>Shop Now</p>
-              </div>
-          </div>
+            <CategoryItem key={id} title={title} imageUrl={imageUrl} />
           )
         })
       }
