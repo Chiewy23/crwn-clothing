@@ -2,6 +2,16 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+This project will allow me to gain exposure to some of the key aspects of the React framework, including (but not limited to):
+- Routing
+- Authentication + firebase
+- Database storage
+- Deployment
+- Redux
+- Serverless functions
+- Typescript
+- GraphQL
+
 ## Available Scripts
 
 In the project directory, you can run:
