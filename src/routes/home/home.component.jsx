@@ -1,4 +1,4 @@
-import UUIDV4 from "../../utilities/UUIDV4";
+import UUIDV4 from "../../utilities/UUIDV4.utils";
 import Categories from "../../components/categories/categories.component";
 
 const Home = () => {
