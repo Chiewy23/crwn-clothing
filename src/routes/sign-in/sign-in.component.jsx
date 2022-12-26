@@ -3,7 +3,7 @@ import { signInWithGooglePopup, createUserDocumentFromAuth } from "../../utiliti
 const SignIn = () => {
     const loginGoogleUser = async () => {
         const { user } = await signInWithGooglePopup();
-        createUserDocumentFromAuth(user);
+        const userDocRef = await createUserDocumentFromAuth(user);
     }
 
     return (
