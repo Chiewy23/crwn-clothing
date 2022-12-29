@@ -3,6 +3,7 @@ import { getRedirectResult } from "firebase/auth";
 import { useEffect } from "react";
 
 import SignUpForm from "../../components/sign-up-form/sign-up-form.components";
+import Button from "../../components/button/button.component";
 
 const SignIn = () => {
 
@@ -27,8 +28,8 @@ const SignIn = () => {
     return (
         <div>
             <h1>Sign In</h1>
-            <button onClick={loginGoogleUser}>Sign in with Google Popup</button>
-            <button onClick={signInWithGoogleRedirect}>Sign in with Google Redirect</button>
+            <Button buttonType="google" onClick={loginGoogleUser}>Sign in with Google Popup</Button>
+            <Button buttonType="inverted" onClick={signInWithGoogleRedirect}>Sign in with Google Redirect</Button>
             <SignUpForm />
         </div>
     )
