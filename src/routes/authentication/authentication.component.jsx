@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import SignUpForm from "../../components/sign-up-form/sign-up-form.components";
 import Button from "../../components/button/button.component";
 
-const SignIn = () => {
+const Authentication = () => {
 
     useEffect(() => {
         const fetchData = async () => {
@@ -35,4 +35,4 @@ const SignIn = () => {
     )
 }
 
-export default SignIn;
+export default Authentication;
