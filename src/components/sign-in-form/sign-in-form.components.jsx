@@ -28,7 +28,19 @@ const SignInForm = () => {
             resetFormFields();
 
         } catch(error) {
+            switch (error.code) {
+                case "auth/wrong-password":
+                    alert("Incorrect password or email");
+                    break;
+                case "auth/user-not-found":
+                    alert("Incorrect password or email");
+                    break;
+                default:
+                    alert(`Error occured when signing in - ${error}`);
+                    break;
+            }
 
+            return;
         }
     }
 
