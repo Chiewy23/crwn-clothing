@@ -12,4 +12,4 @@ export const UserProvider = ({ children }) => {
     const value = { currentUser, setCurrentUser };
 
     return <UserContext.Provider value={value}>{children}</UserContext.Provider>
-}
+};
