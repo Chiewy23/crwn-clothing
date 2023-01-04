@@ -20,10 +20,9 @@ const SignUpForm = () => {
     const [formFields, setFormFields] = useState(defaultFormFields);
     const { displayName, email, password, confirmPassword } = formFields;
 
-    const handleChange = (event) => {
-        const { name, value } = event.target;
-        setFormFields({...formFields, [name]: value});
-    };
+    const resetFormFields = () => {
+        setFormFields(defaultFormFields);
+    }
 
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -49,9 +48,10 @@ const SignUpForm = () => {
         }
     }
 
-    const resetFormFields = () => {
-        setFormFields(defaultFormFields);
-    }
+    const handleChange = (event) => {
+        const { name, value } = event.target;
+        setFormFields({...formFields, [name]: value});
+    };
 
     return (
         <div className="sign-up-container">
