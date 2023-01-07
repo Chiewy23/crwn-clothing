@@ -26,8 +26,8 @@ const Navigation = () => {
                             <Link className="nav-link" to="/auth">SIGN IN</Link>
                         )
                     }
+                    <CartIcon />
                 </div>
-                <CartIcon />
             </div>
             <Outlet />
         </Fragment>
