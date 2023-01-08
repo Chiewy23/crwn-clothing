@@ -38,6 +38,6 @@ const Navigation = () => {
             <Outlet />
         </Fragment>
     );
-}
+};
 
 export default Navigation;
