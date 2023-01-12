@@ -3,6 +3,8 @@ import { CartContext } from "../../contexts/cart.context";
 
 import CartItem from "../../components/cart-item/cart-item.component";
 
+import "./checkout.styles.scss";
+
 const Checkout = () => {
     const { cartItems } = useContext(CartContext);
 
