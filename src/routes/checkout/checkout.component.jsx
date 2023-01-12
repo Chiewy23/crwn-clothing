@@ -1,5 +1,5 @@
 
-const Checkout = () => {
+const Checkout = ({ items }) => {
 
     return (
         <div>Checkout</div>

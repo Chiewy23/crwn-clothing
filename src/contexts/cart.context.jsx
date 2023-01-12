@@ -18,7 +18,7 @@ const addCartItem = (cartItems, itemToAdd) => {
     }
 
     return [...cartItems, { ...itemToAdd, quantity: 1 }]
-}
+};
 
 export const CartProvider = ({ children }) => {
     const [isCartOpen, setIsCartOpen] = useState(false);
