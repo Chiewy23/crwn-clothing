@@ -29,7 +29,7 @@ const removeCartItem = (cartItems, itemToRemove) => {
     }
 
     return cartItems.map(item => {
-        return item.id === itemToAdd.id ? { ...item, quantity: item.quantity - 1 } : item;
+        return item.id === itemToRemove.id ? { ...item, quantity: item.quantity - 1 } : item;
     });
 };
 
