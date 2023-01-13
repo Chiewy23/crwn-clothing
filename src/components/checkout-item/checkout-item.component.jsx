@@ -1,7 +1,7 @@
 
-import "./checout-item.styles.scss";
+import "./checkout-item.styles.scss";
 
-const CheckoutItem = ({cartItem}) => {
+const CheckoutItem = ({ cartItem }) => {
     const { name, imageUrl, price, quantity } = cartItem;
 
     return (
@@ -12,7 +12,7 @@ const CheckoutItem = ({cartItem}) => {
             <span className="name">{ name }</span>
             <span className="quantity">{ quantity }</span>
             <span className="price">{ price }</span>
-            <div className="remove-button">&#1005;</div>
+            <div className="remove-button">&#10005;</div>
         </div>
     );
 };
