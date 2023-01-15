@@ -1,6 +1,11 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useEffect } from "react";
+import { addCollectionAndDocuments } from "../utilities/firebase/firebase.utils";
 
-import SHOP_DATA from "../shop-data";
+// TEMP CODE TO QUICKLY GET THE PRODUCTS INTO FIREBASE.
+// import SHOP_DATA from "../shop-data.js";
+// useEffect(() => {
+//     addCollectionAndDocuments('categories', SHOP_DATA);
+// }, []);
 
 export const ProductsContext = createContext({
     products: [],
