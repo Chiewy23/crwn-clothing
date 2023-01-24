@@ -40,9 +40,9 @@ const Categories = () => {
     return (
         <div className="categories-container">
         {
-          categories.map(({id, title, imageUrl}) => {
+          categories.map(({id, title, imageUrl, route}) => {
             return (
-              <DirectoryItem key={id} title={title} imageUrl={imageUrl} />
+              <DirectoryItem key={id} title={title} imageUrl={imageUrl} route={route} />
             )
           })
         }
