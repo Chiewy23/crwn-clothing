@@ -1,7 +1,7 @@
 import DirectoryItem from "./directory-item/directory-item.component";
 import UUIDV4 from "../../utilities/UUIDV4.utils";
 
-import "./categories.styles.scss";
+import { CategoriesContainer } from "./categories.styles";
 
 const categories = [
   {
@@ -38,7 +38,7 @@ const categories = [
 
 const Categories = () => {
     return (
-        <div className="categories-container">
+        <CategoriesContainer>
         {
           categories.map(({id, title, imageUrl, route}) => {
             return (
@@ -46,7 +46,7 @@ const Categories = () => {
             )
           })
         }
-      </div>
+      </CategoriesContainer>
     );
 };
 
